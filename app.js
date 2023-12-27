@@ -9,6 +9,8 @@ import ReactDOM from "react-dom/client";
  *  - Search
  *  - RestaurantContainer
  *      - RestaurantCard
+ *          -img
+ *          - name, start rating, cuisine, delivery card
  * Footer
  *  - Copyright
  *  - ContactInformation
@@ -36,11 +38,42 @@ const Header = () => {
   );
 };
 
+const RestaurantCard = () => {
+    return (
+      <div className="res-card">
+        <img className="res-logo"
+          src="https://slurrp.club/wp-content/uploads/2021/10/DSC_0037-2.jpg"
+          alt=""
+        />
+            <h3>Restaurant Name</h3>
+            <h4>Biryani, North Indian</h4>
+            <h4>4.4 stars</h4>
+            <h4>38 minutes</h4>
+      </div>
+    );
+};
+
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search">search</div>
+      <div className="res-container">
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+      </div>
+    </div>
+  );
+};
+
 const AppLayout = () => {
   return (
     <div className="app">
       <Header />
-      {/* Body */}
+      <Body />
       {/* Footer */}
     </div>
   );
