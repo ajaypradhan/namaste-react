@@ -1,13 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const Title = () => <h1>Title functional Component</h1>;
+/**
+ * Header
+ *  - Logo
+ *  - Nav Items
+ * Body
+ *  - Search
+ *  - RestaurantContainer
+ *      - RestaurantCard
+ * Footer
+ *  - Copyright
+ *  - ContactInformation
+ */
 
-const HeadingComponent = () => {
+const AppLayout = () => {
   return (
-    <div>
-      <Title />
-      <h1>Functional Component</h1>
+    <div className="app">
+      {/* Header */}
+      {/* Body */}
+      {/* Footer */}
     </div>
   );
 };
