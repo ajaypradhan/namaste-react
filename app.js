@@ -38,16 +38,12 @@ const Header = () => {
   );
 };
 
-const RestaurantCard = (props) => {
+const RestaurantCard = ({ resName, resLogo, cuisine }) => {
   return (
     <div className="res-card">
-      <img
-        className="res-logo"
-        src={props.resLogo}
-        alt=""
-      />
-      <h3>{props.resName}</h3>
-      <h4>{props.cuisine}</h4>
+      <img className="res-logo" src={resLogo} alt="" />
+      <h3>{resName}</h3>
+      <h4>{cuisine}</h4>
       <h4>4.4 stars</h4>
       <h4>38 minutes</h4>
     </div>
